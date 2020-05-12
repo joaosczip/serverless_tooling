@@ -1,0 +1,12 @@
+{
+  "name": "tooling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/joaosczip/serverless_tooling.git",
+  "author": "João Guilherme <joao.sczip@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "serverless": "^1.70.1"
+  }
+}
