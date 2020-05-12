@@ -4,6 +4,13 @@ provider:
   name: aws
   runtime: nodejs12.x
 
+plugins:
+  - serverless-offline
+
 functions:
   hello:
     handler: handler.hello
+    events:
+      - http:
+          method: get
+          path: hello
