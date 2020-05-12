@@ -1,6 +1,6 @@
 "use strict";
 
-const mod = require("./..handler");
+const mod = require("../handler");
 
 const jestPlugin = require("serverless-jest-plugin");
 const lambdaWrapper = jestPlugin.lambdaWrapper;
