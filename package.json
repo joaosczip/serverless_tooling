@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "npx nodemon --exec yarn run offline",
-    "offline": "npx sls offline start --host 0.0.0.0"
+    "offline": "npx sls offline start --host 0.0.0.0",
+    "test": "npx sls invoke test --path __tests__"
   },
   "devDependencies": {
     "git-commit-msg-linter": "^2.4.2",
