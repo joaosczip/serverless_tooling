@@ -8,6 +8,7 @@
   "devDependencies": {
     "git-commit-msg-linter": "^2.4.2",
     "nodemon": "^2.0.3",
-    "serverless": "^1.70.1"
+    "serverless": "^1.70.1",
+    "serverless-offline": "^6.1.5"
   }
 }
