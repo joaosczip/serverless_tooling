@@ -14,3 +14,22 @@ services:
     volumes:
       - "${TMPDIR:-/tmp/localstack}:/tmp/localstack"
       - "/var/run/docker.sock:/var/run/docker.sock"
+
+  app:
+    build: .
+    volumes:
+      - .:/app
+      - nodemodules:/src/node_modules
+    restart: on-failure
+    ports:
+      - 3001:3000
+    links:
+      - localstack
+    depends_on:
+      - localstack
+    environment:
+      LOCALSTACK_HOST: localstack
+      S3_PORT: 4566
+
+volumes:
+  nodemodules: {}
